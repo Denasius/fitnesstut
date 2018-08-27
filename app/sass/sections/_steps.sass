@@ -1,0 +1,63 @@
+.s-steps
+	background-size: contain
+	background-position: center 
+	background-repeat: no-repeat
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-top: 100px
+	.steps_descrioption
+		padding-left: 100px
+		.title 
+			max-width: 335px
+			.h3 
+				@extend %title_text
+			.four_steps
+				@extend %title_p
+				font-size: em(30px)
+		.stop
+			padding-top: 55px
+			padding-bottom: 71px
+			p 
+				font-family: $museo100 
+				font-size: em(21px)
+	.steps_schems
+		display: flex 
+		align-items: center
+		flex-direction: column
+		.block_step
+			display: flex
+			align-items: center
+			justify-content: space-arownd
+			.steps_schemes_block
+				border: 2px solid rgba(#fff, .28)
+				margin: 10px
+				padding: 20px
+				display: flex
+				flex-direction: column
+				align-items: center
+				min-width: 297px
+				transition: all .3s ease
+				&:hover
+					transition: all .3s ease
+					border: 2px solid $accent
+					box-shadow: 0 0 50px rgba($accent, .5)
+				.img_icon
+					width: 39px
+					height: 58px
+					margin-bottom: 39px
+					img 
+						width: 100%
+				.tariff
+					font-size: em(19px)
+					text-transform: uppercase
+					color: $accent
+					text-align: center
+					font-family: $museo700
+					margin-bottom: 30px
+				.kind_tariff
+					font-size: em(17px)
+					text-align: center
+					font-family: $museo300
+		.adaptive_step_block
+			display: none

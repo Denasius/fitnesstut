@@ -1,0 +1,46 @@
+.s-video
+	padding-top: 100px
+	.video_slider
+		padding: 0 50px
+		.item
+			display: inline-block
+			.item_title
+				padding-bottom: 20px
+				.h4 
+					font-family: $museo100 
+					font-size: em(18px)
+					color: $accent
+					letter-spacing: 0.5px
+			.item_image
+				width: 381px
+				height: 190px
+				background-size: cover
+				background-repeat: no-repeat
+				background-position: center
+				position: relative
+				.item_icon
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50% -50%)
+					z-index: 2
+				.item_time
+					position: absolute
+					bottom: 0
+					right: 0
+					padding: 0 20px 10px 0
+					z-index: 2
+					p 
+						font-size: em(16px)
+						font-family: $museo100
+						letter-spacing: 1px
+				
+	.slick-arrow
+		top: 110%
+	.slick-prev
+		left: 65px
+	.slick-next
+		left: 115px
+	.slick-next:hover:before, .slick-prev:hover:before
+		color: $accent
+			

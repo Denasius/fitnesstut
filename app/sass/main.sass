@@ -1,0 +1,296 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	background-color: #1c1c24
+	padding: 36px 37px
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+a 
+	color: #fff
+	font-size: em(17px)
+	font-family: $museo100
+	outline: none
+	transition: all .3s ease
+	&:hover
+		text-decoration: none
+		outline: none
+		color: #fff
+	&:focus
+		outline: none
+	&:active
+		outline: none
+
+button
+	outline: none
+	&:hover, &:focus, &:active
+		outline: none
+
+h1,h2,h3,h4,h5,h6,p
+	margin: 0
+	padding: 0
+
+ul 
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+._btn_group
+	border: none
+	background-color: $accent
+	padding: 10px 15px
+	border-radius: 20px
+	cursor: pointer
+	background: #e4a61b
+	color: #000
+	font-family: $museo700
+	text-transform: uppercase
+	box-shadow: 0 0 50px rgba($accent, .7)
+  font-size: em(18px)
+	img 
+		display: inline-block
+		padding-left: 9px
+		padding-bottom: 5px
+
+.tut 
+	color: $tut
+
+.active_state
+	color: #fff !important
+	background-color: $accent
+	border-left: 1px solid $accent
+	border-right: 1px solid $accent
+
+.partners_social
+	width: 95%
+	position: fixed
+	bottom: 20px
+	text-align: right
+	.fa 
+		padding-left: 10px
+		font-size: em(18px)
+
+.slick-slide
+	outline: none
+
+.overlay
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background: rgba(#000, .5)
+	z-index: 1
+
+section
+  width: 100% !important
+
+header
+  .adaptive_logo
+    display: none
+
+.img_adaptive
+  display: none
+
+.s-mma
+  .s-academy
+    .mma_img_mobile
+      display: none
+
+// ================== ADAPTIVE
+.container_adaptive
+	display: none
+
+.burger
+  width: 50px
+  height: 50px
+  position: fixed
+  top: 20px
+  right: 20px
+  border-radius: 4px
+  z-index: 10000
+  span
+    position: relative
+    margin-top: 9px
+    margin-bottom: 9px
+    user-select: none
+    position: absolute
+    top: 50%
+    left: 50%
+    margin-left: -15px
+    margin-top: -1.5px
+    display: block
+    width: 30px
+    height: 4px
+    background-color: #ffbf3f
+    border-radius: 5px
+    outline: 1px solid transparent
+    transition-property: background-color, transform
+    transition-duration: 0.3s
+    &::before, &::after
+      display: block
+      width: 25px
+      height: 4px
+      background-color: #ffbf3f
+      border-radius: 5px
+      outline: 1px solid transparent
+      transition-property: background-color, transform
+      transition-duration: 0.3s
+    &::before, &::after
+      position: absolute
+      content: ""
+    &::before
+      top: -9px
+    &::after
+      top: 9px
+  &.clicked span
+    background-color: transparent
+    &::before
+      transform: translateY(9px) rotate(45deg)
+    &::after
+      transform: translateY(-9px) rotate(-45deg)
+    &:before, &:after
+      background-color: #ffffff
+  &:hover
+    cursor: pointer
+
+
+.burger_nav
+  background-color: #2a2a2a
+  position: fixed
+  z-index: 9999
+  top: 0
+  right: 0
+  height: 100%
+  max-width: 515px
+  width: 100%
+  padding: 100px 40px 60px 40px
+  overflow-y: auto
+  transform: translateX(100%)
+  transition: transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+  &.show
+    transform: translateX(0px)
+    ul.main li
+      transform: translateX(0px)
+      opacity: 1
+      &:nth-child(1)
+        transition-delay: 0.15s
+      &:nth-child(2)
+        transition-delay: 0.3s
+      &:nth-child(3)
+        transition-delay: 0.45s
+      &:nth-child(4)
+        transition-delay: 0.6s
+      &:nth-child(5)
+        transition-delay: 0.75s
+      &:nth-child(6)
+        transition-delay: 0.9s
+      &:nth-child(7)
+        transition-delay: 1.05s
+      &:nth-child(8)
+        transition-delay: 1.2s
+      &:nth-child(9)
+        transition-delay: 1.35s
+    .about, .social, ul.sub
+      transform: translateY(0px)
+      opacity: 1
+      transition-delay: .85s
+  ul.main
+    list-style-type: none
+    padding-left: 0px
+    li
+      margin-bottom: 5px
+      transform: translateX(40px)
+      opacity: 0
+      transition: all 0.3s ease
+      &:last-of-type
+        margin-bottom: 0px
+      a
+        color: #ffffff
+        text-decoration: none
+        text-transform: uppercase
+        font-size: 1.2rem
+        display: block
+        letter-spacing: 5px
+        font-weight: 600
+        padding: 10px 0
+        transition: all 0.3s ease
+        span, &:hover
+          color: #ffbf3f
+  .about
+    margin-top: 40px
+    transform: translateY(30px)
+    opacity: 0
+    transition: all 0.4s ease
+    a
+      color: rgba(#ffbf3f, .8)
+      font-size: 1.1rem
+      letter-spacing: 0.5px
+      line-height: 170%
+
+.overlay_pizdec
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 1
+  width: 100%
+  height: 100%
+  transition: all 0.3s ease-in-out
+  background-color: #dadada
+  opacity: 0
+  visibility: hidden
+  &.show
+    opacity: 0.8
+    visibility: visible
+
+
+@import "header"
+@import "sections/slider"
+@import "sections/connect"
+@import "sections/why"
+@import "sections/academy"
+@import "sections/steps"
+@import "sections/advantage"
+@import "sections/partners"
+@import "sections/video"
+@import "sections/offer"
+@import "sections/news"
+@import "sections/connection"
+@import "sections/footer"
+
+
+
+@import "media" // Always at the end

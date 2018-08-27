@@ -1,0 +1,518 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+@media screen and (max-width: 1310px)
+	.contacts .navigation nav a
+		font-size: em(14px)
+		margin-left: 15px
+	.contacts .personal
+		padding-left: 50px
+// ≥1200px
++media-breakpoint-down(lg)
+	.container_adaptive
+		display: block
+	.top_nav
+		display: none
+	header
+		.adaptive_logo
+			display: block
+			max-width: 50%
+			margin-bottom: 20px
+			img 
+				width: 100%
+
+// ≥992px
++media-breakpoint-down(md)
+
+@media screen and (max-width: 780px)
+	.s-connection .union_description .h2, .s-partners .title_partners .h3, .s-slider .positions .title #goal_title, .s-steps .steps_descrioption .title .h3, .s-why .h2
+		font-size: 3em
+	.s-slider .positions .title .goal .h1
+		font-size: 1.5em
+
+// ≥768px
++media-breakpoint-down(sm)
+	header
+		.partners_social
+			display: none
+	.s-slider
+		.slick-arrow
+			display: none
+		.positions 
+			.title 
+				.description
+					max-width: 100%
+				.speach_of_lider
+					align-items: center
+					flex-direction: row
+					margin: 20px 0
+					.treatment
+						margin-right: 40px
+						
+
+	.s-connection .union_description .h2, .s-partners .title_partners .h3, .s-slider .positions .title .goal_title, .s-steps .steps_descrioption .title .h3, .s-why .h2
+		font-size: em(40px)
+
+	.s-connection
+		.image_man
+			display: none
+		.union_description
+			margin-top: 20px
+			h2, p
+				text-align: center
+			p 
+				font-size: em(40px)
+				margin-top: 10px
+			ul 
+				text-align: center
+				li 
+					text-align: left
+	.s-why
+		margin-top: 40px
+		text-align: center
+		.why_p
+			margin-top: 10px
+		.super_answer
+			display: none
+		.adaptive_section
+			display: block
+			img 
+				width: 100%
+				position: relative
+				top: -80px
+			.answer
+				position: relative
+				top: -135px
+				.el 
+					margin-bottom: 40px
+					&:last-child
+						margin: 0
+					.h3 
+						font-size: em(40px)
+						font-family: $museo700
+						color: $accent
+					p 
+						font-size: em(30px)
+						font-family: $museo700
+						color: rgba(#fff, .5)
+
+		.to_connect
+			display: none
+	.s-mma
+		.s-academy
+			background-image: none !important
+			display: flex
+			flex-direction: column
+			padding: 0
+			position: relative
+			.h2 
+				order: 1
+				font-size: em(40px)
+				text-align: center
+			p 
+				order: 2
+				font-size: em(30px)
+				text-align: center
+				margin-top: 10px
+			.image
+				order: 3
+				img 
+					width: 20%
+			.mma_img_mobile
+				display: block
+				order: 4
+				img
+					position: absolute
+					top: 15%
+					right: -10%
+					width: 90%
+			.mma_description
+				order: 5
+				margin-top: 45%
+				padding-bottom: 10px
+			.adaptive_image
+				order: 6
+			button 
+				order: 7
+				width: 40%
+				margin: 0 auto
+	.s-steps
+		flex-direction: column
+		.steps_descrioption
+			width: 100%
+			padding-left: 9%
+			padding-bottom: 2%
+			.title 
+				.h3 
+					font-size: em(40px)
+				.four_steps 
+					font-size: em(30px)
+					margin-top: 10px
+			.stop
+				display: none
+			button 
+				display: none
+		.steps_schems
+			flex-direction: column
+			.block_step
+				flex-direction: column
+				align-items: center
+				flex-direction: column
+				.steps_schemes_block
+					width: 100%
+					p 
+						color: rgba(#fff, .5)
+			.adaptive_step_block
+				display: block
+				text-align: center
+				.stop
+					margin-bottom: 20px
+					margin-top: 10px
+					p 
+						font-size: em(20px)
+						font-family: $museo300
+						text-align: center
+						color: rgba(#fff, .5)
+	.s-advantage
+		.adv
+			.fit_advantage
+				font-size: em(40px)
+				text-align: center
+			.fit_tut
+				font-size: em(40px)
+				margin-top: 0
+				text-align: center
+			.advantage_money
+				display: none
+		.wrapper
+			.s-price-btns.desctop
+				display: none
+			.s-price-btns_mobile
+				display: block
+				margin-bottom: 40px
+				a 
+					display: block
+					width: 100%
+					text-align: center
+					border: 2px solid rgba(#fff, .5)
+					border-radius: 23px
+					margin-bottom: 10px
+					padding: 10px
+					font-size: em(20px)
+					text-transform: uppercase
+					color: rgba(#fff, .5)
+					font-family: $museo700
+					&:last-child
+						margin-bottom: 0
+					&:hover
+						background-color: $accent
+						color: #000
+						border: 2px solid $accent
+				.adaptive_activ_menu
+					background-color: $accent
+					color: #000
+					border: 2px solid $accent
+			.block
+				padding: 0
+				.block-tab
+					flex-direction: column
+					width: 100%
+				.s-price-section
+					margin-bottom: 25px
+					width: 100%
+	.s-partners
+		.map_partner
+			flex-direction: column
+			.our_gyms
+				order: 2
+				margin-top: 20px
+				width: 100%
+				background-color: transparent
+				.gyms_list
+					display: none
+	.s-video 
+		.video_slider 
+			.item
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				.item_image
+					width: 100%
+	.s-offer
+		flex-direction: column
+		.unique
+			.unique_text
+				p 
+					color: rgba(#fff, .5)
+	.s-news 
+		.block_news
+			flex-direction: column
+			.first
+				width: 100%
+				margin-bottom: 20px
+			.blocks
+				&:last-child
+					display: none
+			.adaptive_block
+				margin-bottom: 20px
+				width: 100%
+				justify-content: space-between
+				.blocks
+					margin: 0
+					&:first-child
+						margin-right: 10px
+					img 
+						width: 100%
+	.s-connection_bottom
+		height: auto
+		margin-bottom: 20px
+		background-image: none !important
+		.info
+			margin-top: 20px
+			.f_info
+				font-size: em(40px)
+			.default
+				font-size: em(30px)
+	footer
+		.footer
+			flex-direction: column
+			align-items: center
+			.footer_block
+				text-align: center
+				margin-bottom: 10px
+				width: 100%
+				text-align: center
+				.nav_2
+					display: none
+					text-align: center
+				.icons_footer
+					margin: 0 auto
+					text-align: center
+				.f_ynp
+					text-align: center
+				.adaptive_social
+					margin-bottom: 20px
+					display: block
+					text-align: center
+					a 
+						width: 8px
+						height: 8px
+						padding: 17px
+						border-radius: 50%
+						background-color: #edad1e
+						font-size: 18px
+						line-height: 18px
+						color: #2d2d2d
+						&:first-child
+							margin-right: 10px
+						&:last-child
+							padding:
+								right: 19px
+								left: 19px
+						&:hover
+							box-shadow: 0 0 50px #edad1e
+				.scope
+					text-align: center
+					width: 100%
+					.buttons_email
+						margin: 10px auto
+						width: 211px
+
+	.s-top
+      margin: 0 auto
+      background-image: none !important
+	.s-slider .positions
+        width: 100%
+        height: 580px
+
+// ≥576px
++media-breakpoint-down(xs)
+	section
+		overflow: hidden
+	body
+		padding: 10px
+		.img_adaptive
+			display: block
+			position: absolute
+			top: 0.5%
+			right: 0
+	.s-connection .union_description .h2, .s-partners .title_partners .h3, .s-slider .positions .title .goal_title, .s-steps .steps_descrioption .title .h3, .s-why .h2
+		font-size: 1.25em
+	.slider_nav
+		display: none
+	.s-slider 
+		.slick-arrow
+			top: 20%
+		img[alt="Next"]
+			left: 40px
+		img[alt="Next"], img[alt="Prev"]
+			width: 3%
+		.positions .title
+			padding: 0
+			.connect
+				text-align: center
+				padding-top: 60px
+				button
+					font-size: 0.9em
+			.speach_of_lider
+				width: 100%
+				justify-content: flex-start				
+	.partners
+		width: 320px
+		img 
+			width: 100%
+	.button_connect
+		text-align: center
+	.s-connection 
+		.union_description 
+			p
+				font-size: em(18px)
+			ul 
+				li 
+					font-size: em(14px)
+	.s-why 
+		padding-bottom: 0
+		.why_p
+			font-size: em(18px)
+		.adaptive_section 
+			.answer 
+				.el 
+					.h3
+						font-size: em(18px)
+					p 
+						font-size: em(14px)
+	.s-mma 
+		.s-academy 
+			height: 650px
+			.h2
+				font-size: em(18px)
+			p 
+				font-size: em(18px)
+			button
+				width: 50%
+	.s-steps 
+		.steps_descrioption 
+			.title 
+				.four_steps
+					font-size: em(18px)
+		.steps_schems 
+			.adaptive_step_block
+				padding-bottom: 30px
+	.s-advantage 
+		.adv 
+			width: 100%
+			p 
+				width: 100%
+				text-align: center
+			.fit_advantage
+				font-size: 1.25em
+			.fit_tut
+				font-size: 1.25em
+		.wrapper 
+			.block 
+				.block-tab 
+					.s-price-section
+						width: 96%
+	.s-partners 
+		.title_partners 
+			p
+				font-size: em(18px)
+				margin-top: 0
+	.s-video
+		.overlay
+	.s-offer 
+		.unique_title 
+			.sug
+				font-size: em(18px)
+				text-align: center
+			.par 
+				font-size: em(18px)
+				margin-top: 0
+				text-align: center
+		.unique_text
+			p 
+				text-align: center
+	.s-news 
+		.h4
+			font-size: em(18px)
+	.s-connection_bottom 
+		padding-bottom: 40px
+		.info 
+			.f_info
+				font-size: em(18px)
+			.default
+				font-size: em(18px)
+	.s-news .block_news .first .news_text
+		font-size: em(14px)
+	.s-news .block_news .blocks .text_news p
+		font-size: em(14px)
+
+
+@media all and (max-width: 490px)
+	 .s-slider .positions .title .goal 
+	 	.number
+	 		font-size: em(14px)
+	 		width: 20px
+	 		height: 20px
+	 		text-align: center
+	 	.h1
+	 		font-size: em(14px)
+	 .s-slider .positions 
+	 	height: 460px
+	 	.title .description p
+	 		font-size: em(14px)
+
+
+@media all and (max-width: 350px)
+	.s-steps .steps_schems .block_step .steps_schemes_block
+		width: 90%
+	.s-mma .s-academy button
+		width: 70%
+	.s-advantage .wrapper .s-price-btns_mobile a
+		font-size: em(16px)
+	.s-why .adaptive_section .answer .el
+		&:first-child
+			margin-top: 30px
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
+
+
+@media screen and (min-width: 1900px)
+	.s-academy
+		background-position: 90% bottom 
+
+@media screen and (min-width: 1700px)
+	body
+		padding: 36px 100px
+
+@media screen and (min-width: 1700px)
+	body
+		padding: 36px 180px
+
+@media screen and (min-width: 1900px)
+	body
+		padding: 36px 200px
+
+@media screen and (min-width: 1920px)
+	body
+		padding: 36px 322px
+	.s-why .super_answer .blocks .block_2 .el
+		width: 285px
+	.s-why .super_answer .blocks .block_2 .program
+		right: 18%

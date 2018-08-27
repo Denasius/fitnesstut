@@ -1,0 +1,49 @@
+.s-news
+	padding-top: 100px
+	.h4 
+		color: $accent
+		text-align: center
+		font-size: em(63px)
+		text-transform: uppercase
+		font-family: $museo700
+	.block_news
+		display: flex
+		align-items: flex-start
+		justify-content: space-around
+		margin-top: 20px
+		.adaptive_block
+			display: flex
+			align-items: center
+			justify-content: center
+			.blocks
+				margin-right: 40px
+				&:last-child
+					margin: 0
+		.blocks
+			width: 213px
+			.text_news
+				margin-top: 10px
+				p 
+					font-family: $museo100 
+					font-size: em(16px)
+			.details
+				margin-top: 10px
+				a 
+					color: rgba(#fff, .21)
+					text-transform: uppercase
+					text-decoration: underline
+		.first
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: center 
+			width: 424px
+			height: 279px
+			padding: 20px
+			position: relative
+			.news_text
+				position: absolute
+				bottom: 0
+				z-index: 2
+				font-family: $museo100
+
+

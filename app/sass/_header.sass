@@ -1,0 +1,45 @@
+.top_nav
+	display: flex
+	align-items: center
+	justify-content: space-between
+.contacts
+	display: flex
+	align-items: center
+	justify-content: space-between
+	.navigation
+		nav 
+			a 
+				margin-left: 25px
+				padding-bottom: 13px
+				position: relative
+				color: rgba(#fff, .8)
+				&:after
+					transition: all .3s ease
+					content: ''
+					position: absolute
+					bottom: 0
+					left: 40%
+					height: 2px
+					width: 17px
+					background-color: $accent
+					opacity: 0
+				&:hover
+					&:after
+						opacity: 1
+	.personal
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding-left: 100px
+		.phone
+			margin-right: 30px
+			.fa
+				margin-right: 5px
+			a 
+				font-size: em(16px)
+				opacity: 0.5
+				.phone_bold
+					font-family: $museo500
+		.sign_in
+			img 
+				margin-right: 8px

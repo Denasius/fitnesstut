@@ -1,0 +1,48 @@
+$museo100: "museoSansCyrl_100", sans-serif
+$museo300: "museoSansCyrl_300", sans-serif
+$museo500: "museoSansCyrl_500", sans-serif
+$museo700: "museoSansCyrl_700", sans-serif
+$museo900: "museoSansCyrl_900", sans-serif
+$accent: #ffbf3f
+$text: #fff
+$tut: #f8b622
+
+%title_text
+	font-size: em(65px)
+	text-transform: uppercase
+	font-family: $museo900
+	color: $accent
+
+%title_p
+	text-transform: uppercase
+	font-family: $museo900
+	margin-top: -20px
+
+%s_g_p_top
+	content: ''
+	position: absolute
+	top: -15px
+	right: -15px
+	height: 15px
+	width: 167px
+
+%s_g_p_right
+	content: ''
+	position: absolute
+	top: 0
+	right: -15px
+	height: 167px
+	width: 15px
+
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px
+$grid-columns: 12
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px)
+
+$gutter: $grid-gutter-width
+
+$base-size: 16px
+@function em ($px, $base: $base-size)
+	@return ($px/$base) * 1em

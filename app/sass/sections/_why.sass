@@ -1,0 +1,92 @@
+.s-why
+	padding-bottom: 100px
+	.h2, p 
+		text-align: center
+	.h2 
+		@extend %title_text
+	.why_p 
+		@extend %title_p
+		font-size: em(29px)
+	.super_answer
+		min-height: 740px
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+		.blocks
+			display: flex
+			justify-content: space-around
+			align-items: center
+			height: 740px
+			.block_1, .block_2
+				display: flex
+				flex-direction: column
+				justify-content: space-around
+				height: 100%
+				.el 
+					.h3
+						color: $accent
+						text-transform: uppercase
+						font-size: em(20px)
+						font-family: $museo900
+						position: relative
+
+	
+			.block_1
+				align-items: flex-end
+				.economy
+					top: 12% //90px
+					left: 30% //75px
+
+				.graphic
+					top: 5% //35px
+					left: -15% //-37px
+
+				.clubs
+					bottom: 0.8% //7px
+					left: 21% //56px
+				.el 
+					max-width: 260px
+					position: relative
+					p 
+						text-align: left
+					.h3 
+						text-align: left
+						margin-left: 40px
+			.block_2
+				align-items: flex-start
+				.el
+					position: relative
+					max-width: 280px
+					.h3, p 
+						text-align: left
+				.program
+					top: 11% //83px
+					right: 20% //56px
+				.different
+					top: 1% //10px
+					right: -48% //-132px
+					.h3 
+						margin-right: 40px
+				.price
+					right: 3% //8px
+					bottom: 3.5% //26px
+					.h3 
+						margin-right: 40px
+	.to_connect
+		width: 100%
+		text-align: center
+		position: relative
+		button 
+			font-size: em(18px)
+			z-index: 10
+			position: relative
+		.line 
+			position: absolute
+			top: 50%
+			height: 1px
+			width: 150%
+			background-color: rgba(#fff, .1)
+			z-index: 1
+			right: -25%
+	.adaptive_section
+		display: none

@@ -1,0 +1,70 @@
+.s-partners
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: center
+	padding-top: 100px
+	.title_partners
+		text-align: center
+		margin-bottom: 80px
+		.h3 
+			@extend %title_text
+		p 
+			@extend %title_p
+			font-size: em(35px)
+	.map_partner
+		display: flex
+		align-items: center
+		height: 570px
+		.our_gyms
+			background-color: #191919
+			padding: 0 10px
+			width: 380px
+			height: 100%
+			overflow-y: scroll
+			margin-right: 20px
+			.gyms_list
+				margin-top: 46px
+				margin-bottom: 40px
+				text-align: center
+				background-color: #fff
+				border-radius: 23px
+				display: flex
+				justify-content: space-between
+				align-items: center
+				a 
+					font-size: em(14px)
+					text-transform: uppercase
+					color: #000
+					padding: 5px 8px
+					border-left: 1px solid transparent 
+					border-right: 1px solid transparent 
+					&:first-child
+						border-radius: 23px 0 0 23px 
+						padding-left: 11px
+					&:last-child
+						border-radius: 0 23px 23px 0
+						padding-right: 4px
+					&:hover
+						background-color: $accent
+						border-left-color: $accent 
+						border-right-color: $accent 
+			.items
+				.tit
+					.h4 
+						color: $accent
+						font-family: $museo700
+						font-size: em(18px)
+				.des
+					margin-bottom: 30px
+					p 
+						font-size: em(18px)
+						color: #fff
+						font-family: $museo100
+		.map 
+			height: 570px
+			width: 100%
+
+	.all_gyms
+		width: 100%
+		padding: 40px 0
+		text-align: center
